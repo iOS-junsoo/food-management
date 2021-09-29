@@ -195,12 +195,28 @@
                     </view>
                     <navigationItem key="navigationItem" title="식단 추가" id="ZiB-JY-elm"/>
                     <connections>
+                        <outlet property="foodName" destination="770-L8-ZaQ" id="S3Z-Qo-Cvl"/>
                         <outlet property="picker" destination="12C-um-RhN" id="pgx-Lx-PBQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1NE-sS-rsg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1160" y="2450.4739336492889"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="NAA-tG-qRZ">
+            <objects>
+                <viewController id="pg8-dw-Zde" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uMn-zk-5FC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="cbe-vz-gaJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oNG-gm-KSb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-157" y="2450"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Lde-AN-YDx">
@@ -218,17 +234,33 @@
             </objects>
             <point key="canvasLocation" x="841" y="1702"/>
         </scene>
-        <!--View Controller-->
+        <!--총 소모 칼로리는  ~ 입니다.-->
         <scene sceneID="FWF-lC-IbS">
             <objects>
-                <viewController id="j33-05-rj4" sceneMemberID="viewController">
+                <viewController id="j33-05-rj4" customClass="exerciseViewController" customModule="food_management" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MZS-ZQ-jhI">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Mg5-gH-cLD">
+                                <rect key="frame" x="0.0" y="88" width="390" height="673"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="DqM-bL-mqE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Mg5-gH-cLD" firstAttribute="top" secondItem="DqM-bL-mqE" secondAttribute="top" id="Bof-Ia-THp"/>
+                            <constraint firstItem="DqM-bL-mqE" firstAttribute="trailing" secondItem="Mg5-gH-cLD" secondAttribute="trailing" id="EH5-gT-zFH"/>
+                            <constraint firstItem="DqM-bL-mqE" firstAttribute="bottom" secondItem="Mg5-gH-cLD" secondAttribute="bottom" id="Mq3-b4-Xfx"/>
+                            <constraint firstItem="Mg5-gH-cLD" firstAttribute="leading" secondItem="DqM-bL-mqE" secondAttribute="leading" id="xDf-Ih-pmQ"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Mtg-Hq-6HN"/>
+                    <navigationItem key="navigationItem" title="총 소모 칼로리는  ~ 입니다." id="Mtg-Hq-6HN"/>
+                    <connections>
+                        <outlet property="exerciseTableView" destination="Mg5-gH-cLD" id="F4E-uP-0mx"/>
+                        <outlet property="minusCalorieTotal" destination="Mtg-Hq-6HN" id="MPo-Dm-IHp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vw8-09-Tr8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

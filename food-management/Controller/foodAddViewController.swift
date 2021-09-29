@@ -11,13 +11,17 @@ class foodAddViewController: UIViewController{
     
     
     @IBOutlet weak var picker: UIPickerView!
+    @IBOutlet weak var foodName: UITextField!
+   // public var completionHandler: ((String) -> Void)?
     let data = ["탄수화물", "단백질", "지방", "비타민", "무기질", "물"]
     override func viewDidLoad() {
         super.viewDidLoad()
         picker.dataSource = self
         picker.delegate = self
     }
-   
+    @IBAction func didTapSave() {
+        
+    }
 }
 extension foodAddViewController: UIPickerViewDataSource {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -34,3 +38,4 @@ extension foodAddViewController: UIPickerViewDelegate {
         return data[row]
     }
 }
+

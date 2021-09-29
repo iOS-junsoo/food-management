@@ -31,6 +31,7 @@ class foodViewController: UIViewController {
         setUpTableView()
         setUpLayout()
     }
+
     
     // MARK: -  Helper
     private func setUpTableView() {

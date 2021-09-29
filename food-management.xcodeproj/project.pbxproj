@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		99C2E74027028BA900B91DA8 /* exerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C2E73F27028BA900B91DA8 /* exerciseViewController.swift */; };
 		99C2E74227029ABB00B91DA8 /* foodAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C2E74127029ABB00B91DA8 /* foodAddViewController.swift */; };
+		99C2E7442702AE6C00B91DA8 /* globalVar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C2E7432702AE6C00B91DA8 /* globalVar.swift */; };
+		99C2E7472702ECE700B91DA8 /* exerciseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C2E7452702ECE700B91DA8 /* exerciseTableViewCell.swift */; };
+		99C2E7482702ECE700B91DA8 /* exerciseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99C2E7462702ECE700B91DA8 /* exerciseTableViewCell.xib */; };
+		99C2E74A270404B600B91DA8 /* exerciseAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C2E749270404B600B91DA8 /* exerciseAddViewController.swift */; };
 		99DB50C126FF2D0F004140BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DB50C026FF2D0F004140BD /* AppDelegate.swift */; };
 		99DB50C326FF2D0F004140BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DB50C226FF2D0F004140BD /* SceneDelegate.swift */; };
 		99DB50C526FF2D0F004140BD /* foodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DB50C426FF2D0F004140BD /* foodViewController.swift */; };
@@ -24,6 +28,10 @@
 /* Begin PBXFileReference section */
 		99C2E73F27028BA900B91DA8 /* exerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exerciseViewController.swift; sourceTree = "<group>"; };
 		99C2E74127029ABB00B91DA8 /* foodAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodAddViewController.swift; sourceTree = "<group>"; };
+		99C2E7432702AE6C00B91DA8 /* globalVar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = globalVar.swift; sourceTree = "<group>"; };
+		99C2E7452702ECE700B91DA8 /* exerciseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exerciseTableViewCell.swift; sourceTree = "<group>"; };
+		99C2E7462702ECE700B91DA8 /* exerciseTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = exerciseTableViewCell.xib; sourceTree = "<group>"; };
+		99C2E749270404B600B91DA8 /* exerciseAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exerciseAddViewController.swift; sourceTree = "<group>"; };
 		99DB50BD26FF2D0F004140BD /* food-management.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "food-management.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99DB50C026FF2D0F004140BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99DB50C226FF2D0F004140BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +92,8 @@
 				99DB50CB26FF2D11004140BD /* LaunchScreen.storyboard */,
 				99DB512C2701E418004140BD /* foodTableViewCell.swift */,
 				99DB512D2701E418004140BD /* foodTableViewCell.xib */,
+				99C2E7452702ECE700B91DA8 /* exerciseTableViewCell.swift */,
+				99C2E7462702ECE700B91DA8 /* exerciseTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -92,8 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				99DB50C426FF2D0F004140BD /* foodViewController.swift */,
-				99C2E73F27028BA900B91DA8 /* exerciseViewController.swift */,
 				99C2E74127029ABB00B91DA8 /* foodAddViewController.swift */,
+				99C2E73F27028BA900B91DA8 /* exerciseViewController.swift */,
+				99C2E749270404B600B91DA8 /* exerciseAddViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -112,6 +123,7 @@
 			children = (
 				99DB512827018710004140BD /* Food.swift */,
 				99DB512A27018726004140BD /* Exercise.swift */,
+				99C2E7432702AE6C00B91DA8 /* globalVar.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -186,6 +198,7 @@
 				99DB50CD26FF2D11004140BD /* LaunchScreen.storyboard in Resources */,
 				99DB512F2701E418004140BD /* foodTableViewCell.xib in Resources */,
 				99DB50CA26FF2D11004140BD /* Assets.xcassets in Resources */,
+				99C2E7482702ECE700B91DA8 /* exerciseTableViewCell.xib in Resources */,
 				99DB50C826FF2D0F004140BD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,11 +213,14 @@
 				99C2E74027028BA900B91DA8 /* exerciseViewController.swift in Sources */,
 				99DB512B27018726004140BD /* Exercise.swift in Sources */,
 				99DB50C526FF2D0F004140BD /* foodViewController.swift in Sources */,
+				99C2E7472702ECE700B91DA8 /* exerciseTableViewCell.swift in Sources */,
 				99DB512927018710004140BD /* Food.swift in Sources */,
 				99DB512E2701E418004140BD /* foodTableViewCell.swift in Sources */,
 				99DB50C126FF2D0F004140BD /* AppDelegate.swift in Sources */,
 				99C2E74227029ABB00B91DA8 /* foodAddViewController.swift in Sources */,
 				99DB50C326FF2D0F004140BD /* SceneDelegate.swift in Sources */,
+				99C2E74A270404B600B91DA8 /* exerciseAddViewController.swift in Sources */,
+				99C2E7442702AE6C00B91DA8 /* globalVar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,18 +1,17 @@
 //
-//  foodTableViewCell.swift
+//  exerciseTableViewCell.swift
 //  food-management
 //
-//  Created by 준수김 on 2021/09/27.
+//  Created by 준수김 on 2021/09/28.
 //
 
 import UIKit
 
-class foodTableViewCell: UITableViewCell {
-
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var detailLabel: UILabel!
-    @IBOutlet weak var calorieLabel: UILabel!
-    @IBOutlet weak var foodImage: UIImageView!
+class exerciseTableViewCell: UITableViewCell {
+    @IBOutlet weak var titleLabel1: UILabel!
+    @IBOutlet weak var detailLabel1: UILabel!
+    @IBOutlet weak var calorieLabel1: UILabel!
+    @IBOutlet weak var exerciseImage: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
