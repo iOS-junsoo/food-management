@@ -12,4 +12,12 @@ struct Food {
     var foodname: String //음식 이름
     var foodweight: String //음식 무게
     var foodcalorie: String //섭취 칼로리
+    
+    //초기화
+    init(foodImage: String, foodname: String, foodweight: String, foodcalorie: String) {
+        self.foodImage = foodImage
+        self.foodname = foodname
+        self.foodweight = foodweight
+        self.foodcalorie = foodcalorie
+    }
 }

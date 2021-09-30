@@ -7,12 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BC9E4308310CB21AC158013 /* Pods_food_management.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C859AC98D3F5E67D4C873BF /* Pods_food_management.framework */; };
 		99C2E74027028BA900B91DA8 /* exerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C2E73F27028BA900B91DA8 /* exerciseViewController.swift */; };
 		99C2E74227029ABB00B91DA8 /* foodAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C2E74127029ABB00B91DA8 /* foodAddViewController.swift */; };
 		99C2E7442702AE6C00B91DA8 /* globalVar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C2E7432702AE6C00B91DA8 /* globalVar.swift */; };
 		99C2E7472702ECE700B91DA8 /* exerciseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C2E7452702ECE700B91DA8 /* exerciseTableViewCell.swift */; };
 		99C2E7482702ECE700B91DA8 /* exerciseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99C2E7462702ECE700B91DA8 /* exerciseTableViewCell.xib */; };
 		99C2E74A270404B600B91DA8 /* exerciseAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C2E749270404B600B91DA8 /* exerciseAddViewController.swift */; };
+		99C2E7CC2705A20300B91DA8 /* Week.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C2E7CB2705A20300B91DA8 /* Week.swift */; };
+		99C2E7CE2705A27E00B91DA8 /* weekViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C2E7CD2705A27E00B91DA8 /* weekViewController.swift */; };
+		99C2E7D12705A58F00B91DA8 /* weekTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C2E7CF2705A58F00B91DA8 /* weekTableViewCell.swift */; };
+		99C2E7D22705A58F00B91DA8 /* weekTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99C2E7D02705A58F00B91DA8 /* weekTableViewCell.xib */; };
+		99C2E7D42705A8E300B91DA8 /* weekPlusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C2E7D32705A8E300B91DA8 /* weekPlusViewController.swift */; };
+		99C2E7D62705DE5D00B91DA8 /* FoodList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C2E7D52705DE5D00B91DA8 /* FoodList.swift */; };
 		99DB50C126FF2D0F004140BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DB50C026FF2D0F004140BD /* AppDelegate.swift */; };
 		99DB50C326FF2D0F004140BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DB50C226FF2D0F004140BD /* SceneDelegate.swift */; };
 		99DB50C526FF2D0F004140BD /* foodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DB50C426FF2D0F004140BD /* foodViewController.swift */; };
@@ -26,12 +33,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C859AC98D3F5E67D4C873BF /* Pods_food_management.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_food_management.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99C2E73F27028BA900B91DA8 /* exerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exerciseViewController.swift; sourceTree = "<group>"; };
 		99C2E74127029ABB00B91DA8 /* foodAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodAddViewController.swift; sourceTree = "<group>"; };
 		99C2E7432702AE6C00B91DA8 /* globalVar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = globalVar.swift; sourceTree = "<group>"; };
 		99C2E7452702ECE700B91DA8 /* exerciseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exerciseTableViewCell.swift; sourceTree = "<group>"; };
 		99C2E7462702ECE700B91DA8 /* exerciseTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = exerciseTableViewCell.xib; sourceTree = "<group>"; };
 		99C2E749270404B600B91DA8 /* exerciseAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exerciseAddViewController.swift; sourceTree = "<group>"; };
+		99C2E7CB2705A20300B91DA8 /* Week.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Week.swift; sourceTree = "<group>"; };
+		99C2E7CD2705A27E00B91DA8 /* weekViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weekViewController.swift; sourceTree = "<group>"; };
+		99C2E7CF2705A58F00B91DA8 /* weekTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weekTableViewCell.swift; sourceTree = "<group>"; };
+		99C2E7D02705A58F00B91DA8 /* weekTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = weekTableViewCell.xib; sourceTree = "<group>"; };
+		99C2E7D32705A8E300B91DA8 /* weekPlusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weekPlusViewController.swift; sourceTree = "<group>"; };
+		99C2E7D52705DE5D00B91DA8 /* FoodList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodList.swift; sourceTree = "<group>"; };
 		99DB50BD26FF2D0F004140BD /* food-management.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "food-management.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99DB50C026FF2D0F004140BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99DB50C226FF2D0F004140BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +58,8 @@
 		99DB512A27018726004140BD /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		99DB512C2701E418004140BD /* foodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodTableViewCell.swift; sourceTree = "<group>"; };
 		99DB512D2701E418004140BD /* foodTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = foodTableViewCell.xib; sourceTree = "<group>"; };
+		B8855561F0E93339FF6BC472 /* Pods-food-management.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-food-management.release.xcconfig"; path = "Target Support Files/Pods-food-management/Pods-food-management.release.xcconfig"; sourceTree = "<group>"; };
+		E2C0FEA72A6E937129FF0287 /* Pods-food-management.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-food-management.debug.xcconfig"; path = "Target Support Files/Pods-food-management/Pods-food-management.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,17 +67,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BC9E4308310CB21AC158013 /* Pods_food_management.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		735BA4E9BEB494005DE11452 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E2C0FEA72A6E937129FF0287 /* Pods-food-management.debug.xcconfig */,
+				B8855561F0E93339FF6BC472 /* Pods-food-management.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		893D5AF1639BCB9EFE935F13 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C859AC98D3F5E67D4C873BF /* Pods_food_management.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		99DB50B426FF2D0F004140BD = {
 			isa = PBXGroup;
 			children = (
 				99DB50BF26FF2D0F004140BD /* food-management */,
 				99DB50BE26FF2D0F004140BD /* Products */,
+				735BA4E9BEB494005DE11452 /* Pods */,
+				893D5AF1639BCB9EFE935F13 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +130,8 @@
 				99DB512D2701E418004140BD /* foodTableViewCell.xib */,
 				99C2E7452702ECE700B91DA8 /* exerciseTableViewCell.swift */,
 				99C2E7462702ECE700B91DA8 /* exerciseTableViewCell.xib */,
+				99C2E7CF2705A58F00B91DA8 /* weekTableViewCell.swift */,
+				99C2E7D02705A58F00B91DA8 /* weekTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -105,6 +143,8 @@
 				99C2E74127029ABB00B91DA8 /* foodAddViewController.swift */,
 				99C2E73F27028BA900B91DA8 /* exerciseViewController.swift */,
 				99C2E749270404B600B91DA8 /* exerciseAddViewController.swift */,
+				99C2E7CD2705A27E00B91DA8 /* weekViewController.swift */,
+				99C2E7D32705A8E300B91DA8 /* weekPlusViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -123,7 +163,9 @@
 			children = (
 				99DB512827018710004140BD /* Food.swift */,
 				99DB512A27018726004140BD /* Exercise.swift */,
+				99C2E7CB2705A20300B91DA8 /* Week.swift */,
 				99C2E7432702AE6C00B91DA8 /* globalVar.swift */,
+				99C2E7D52705DE5D00B91DA8 /* FoodList.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -144,9 +186,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 99DB50D126FF2D11004140BD /* Build configuration list for PBXNativeTarget "food-management" */;
 			buildPhases = (
+				FB75C3FF96347A3EF787B33D /* [CP] Check Pods Manifest.lock */,
 				99DB50B926FF2D0F004140BD /* Sources */,
 				99DB50BA26FF2D0F004140BD /* Frameworks */,
 				99DB50BB26FF2D0F004140BD /* Resources */,
+				6FE29F246C7B8C316C408864 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -200,10 +244,53 @@
 				99DB50CA26FF2D11004140BD /* Assets.xcassets in Resources */,
 				99C2E7482702ECE700B91DA8 /* exerciseTableViewCell.xib in Resources */,
 				99DB50C826FF2D0F004140BD /* Main.storyboard in Resources */,
+				99C2E7D22705A58F00B91DA8 /* weekTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6FE29F246C7B8C316C408864 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-food-management/Pods-food-management-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-food-management/Pods-food-management-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-food-management/Pods-food-management-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB75C3FF96347A3EF787B33D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-food-management-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		99DB50B926FF2D0F004140BD /* Sources */ = {
@@ -213,14 +300,19 @@
 				99C2E74027028BA900B91DA8 /* exerciseViewController.swift in Sources */,
 				99DB512B27018726004140BD /* Exercise.swift in Sources */,
 				99DB50C526FF2D0F004140BD /* foodViewController.swift in Sources */,
+				99C2E7CE2705A27E00B91DA8 /* weekViewController.swift in Sources */,
 				99C2E7472702ECE700B91DA8 /* exerciseTableViewCell.swift in Sources */,
+				99C2E7D42705A8E300B91DA8 /* weekPlusViewController.swift in Sources */,
 				99DB512927018710004140BD /* Food.swift in Sources */,
+				99C2E7CC2705A20300B91DA8 /* Week.swift in Sources */,
 				99DB512E2701E418004140BD /* foodTableViewCell.swift in Sources */,
 				99DB50C126FF2D0F004140BD /* AppDelegate.swift in Sources */,
 				99C2E74227029ABB00B91DA8 /* foodAddViewController.swift in Sources */,
 				99DB50C326FF2D0F004140BD /* SceneDelegate.swift in Sources */,
 				99C2E74A270404B600B91DA8 /* exerciseAddViewController.swift in Sources */,
+				99C2E7D62705DE5D00B91DA8 /* FoodList.swift in Sources */,
 				99C2E7442702AE6C00B91DA8 /* globalVar.swift in Sources */,
+				99C2E7D12705A58F00B91DA8 /* weekTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +456,7 @@
 		};
 		99DB50D226FF2D11004140BD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2C0FEA72A6E937129FF0287 /* Pods-food-management.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -392,6 +485,7 @@
 		};
 		99DB50D326FF2D11004140BD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8855561F0E93339FF6BC472 /* Pods-food-management.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

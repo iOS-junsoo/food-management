@@ -8,22 +8,35 @@
 import UIKit
 
 class exerciseAddViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+    
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBOutlet weak var picker: UIPickerView!
+    
+    let data = ["걷기(뛰기)", "배드민턴", "복싱", "수영", "자전거", "탁구"]
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        picker.dataSource = self
+        picker.delegate = self
     }
-    */
+    @IBAction func didTapSave() {
+        
+    }
+   
+}
+extension exerciseAddViewController: UIPickerViewDataSource {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return data.count
+    }
+}
 
+extension exerciseAddViewController: UIPickerViewDelegate {
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return data[row]
+    }
 }
