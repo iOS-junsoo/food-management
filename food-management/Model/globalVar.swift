@@ -7,6 +7,7 @@
 
 import Foundation
 
-struct foodData {
-    static var foodName = ""
+struct Calorie {
+    static var food = 0
+    static var exercise = 0
 }

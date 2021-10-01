@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2BC9E4308310CB21AC158013 /* Pods_food_management.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C859AC98D3F5E67D4C873BF /* Pods_food_management.framework */; };
+		992F92AC2706B8830017E238 /* ExerciseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992F92AB2706B8830017E238 /* ExerciseList.swift */; };
 		99C2E74027028BA900B91DA8 /* exerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C2E73F27028BA900B91DA8 /* exerciseViewController.swift */; };
 		99C2E74227029ABB00B91DA8 /* foodAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C2E74127029ABB00B91DA8 /* foodAddViewController.swift */; };
 		99C2E7442702AE6C00B91DA8 /* globalVar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C2E7432702AE6C00B91DA8 /* globalVar.swift */; };
@@ -34,6 +35,8 @@
 
 /* Begin PBXFileReference section */
 		7C859AC98D3F5E67D4C873BF /* Pods_food_management.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_food_management.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		992F92AB2706B8830017E238 /* ExerciseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseList.swift; sourceTree = "<group>"; };
+		992F92AD2706C5BE0017E238 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		99C2E73F27028BA900B91DA8 /* exerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exerciseViewController.swift; sourceTree = "<group>"; };
 		99C2E74127029ABB00B91DA8 /* foodAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodAddViewController.swift; sourceTree = "<group>"; };
 		99C2E7432702AE6C00B91DA8 /* globalVar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = globalVar.swift; sourceTree = "<group>"; };
@@ -94,6 +97,7 @@
 		99DB50B426FF2D0F004140BD = {
 			isa = PBXGroup;
 			children = (
+				992F92AD2706C5BE0017E238 /* README.md */,
 				99DB50BF26FF2D0F004140BD /* food-management */,
 				99DB50BE26FF2D0F004140BD /* Products */,
 				735BA4E9BEB494005DE11452 /* Pods */,
@@ -162,10 +166,11 @@
 			isa = PBXGroup;
 			children = (
 				99DB512827018710004140BD /* Food.swift */,
+				99C2E7D52705DE5D00B91DA8 /* FoodList.swift */,
 				99DB512A27018726004140BD /* Exercise.swift */,
+				992F92AB2706B8830017E238 /* ExerciseList.swift */,
 				99C2E7CB2705A20300B91DA8 /* Week.swift */,
 				99C2E7432702AE6C00B91DA8 /* globalVar.swift */,
-				99C2E7D52705DE5D00B91DA8 /* FoodList.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -304,6 +309,7 @@
 				99C2E7472702ECE700B91DA8 /* exerciseTableViewCell.swift in Sources */,
 				99C2E7D42705A8E300B91DA8 /* weekPlusViewController.swift in Sources */,
 				99DB512927018710004140BD /* Food.swift in Sources */,
+				992F92AC2706B8830017E238 /* ExerciseList.swift in Sources */,
 				99C2E7CC2705A20300B91DA8 /* Week.swift in Sources */,
 				99DB512E2701E418004140BD /* foodTableViewCell.swift in Sources */,
 				99DB50C126FF2D0F004140BD /* AppDelegate.swift in Sources */,

@@ -170,34 +170,36 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kcal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A4v-m0-Cid">
-                                <rect key="frame" x="298" y="635" width="32" height="16"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="16"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E96-ky-Fab">
                                 <rect key="frame" x="148" y="689" width="94" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="추가"/>
                                 <connections>
-                                    <action selector="didTapSave" destination="4PT-lN-5bg" eventType="touchUpInside" id="0WW-BM-OBm"/>
+                                    <action selector="tappedBtn:" destination="4PT-lN-5bg" eventType="touchUpInside" id="qx2-wG-mtl"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="섭취한 칼로리를 작성해주세요." textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M8t-BT-tBc">
-                                <rect key="frame" x="20" y="626" width="270" height="34"/>
+                                <rect key="frame" x="20" y="626" width="186" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kcal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A4v-m0-Cid">
+                                <rect key="frame" x="214" y="635" width="32" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="slf-SJ-Ldw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="식단 추가" id="ZiB-JY-elm"/>
                     <connections>
+                        <outlet property="foodAmount" destination="awS-4H-RxV" id="zgt-SD-Zb3"/>
+                        <outlet property="foodCalorie" destination="M8t-BT-tBc" id="h4L-da-dfo"/>
                         <outlet property="foodName" destination="770-L8-ZaQ" id="S3Z-Qo-Cvl"/>
                         <outlet property="picker" destination="12C-um-RhN" id="pgx-Lx-PBQ"/>
                     </connections>
@@ -243,6 +245,9 @@
                                 <rect key="frame" x="0.0" y="374" width="390" height="203"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <locale key="locale" localeIdentifier="ko_KR"/>
+                                <connections>
+                                    <action selector="didTimePickerValueChanged:" destination="pg8-dw-Zde" eventType="valueChanged" id="5zR-N6-DOl"/>
+                                </connections>
                             </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VW4-tT-dgL">
                                 <rect key="frame" x="148" y="689" width="94" height="58"/>
@@ -253,31 +258,33 @@
                                     <action selector="didTapSave" destination="pg8-dw-Zde" eventType="touchUpInside" id="GWv-nF-Ta9"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="소모한 칼로리를 작성해주세요." textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IB9-d7-OFf">
+                                <rect key="frame" x="20" y="623" width="188" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kcal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgp-qf-t1h">
-                                <rect key="frame" x="303" y="632" width="32" height="16"/>
+                                <rect key="frame" x="216" y="632" width="32" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="소모한 칼로리를 작성해주세요." textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IB9-d7-OFf">
-                                <rect key="frame" x="20" y="623" width="270" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cbe-vz-gaJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="운동 추가" id="PDI-C5-IbZ"/>
                     <connections>
+                        <outlet property="exerciseCalorie" destination="IB9-d7-OFf" id="uuj-wa-O4B"/>
                         <outlet property="picker" destination="HRB-29-0k8" id="IYm-t8-f6n"/>
+                        <outlet property="timePicker" destination="9a0-Dz-Sku" id="qxq-2t-IYq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oNG-gm-KSb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-131" y="2467"/>
+            <point key="canvasLocation" x="-132.30769230769229" y="2466.824644549763"/>
         </scene>
         <!--오늘의 잔여 칼로리는 ~입니다.-->
         <scene sceneID="Lde-AN-YDx">

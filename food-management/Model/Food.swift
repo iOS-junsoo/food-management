@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 struct Food {
     var foodImage: String //음식 사진 - 이미지 이름으로 이미지를 바꿀 예정이기 때문에 이미지 이름 잘 작성해야함.

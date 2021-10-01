@@ -59,6 +59,7 @@ extension weekViewController: UITableViewDelegate, UITableViewDataSource {
         cell.dayTitle?.sizeToFit()
         cell.reminderCalorie?.text = "잔여 칼로리 - \(cellData.Remainder)Kcal"
         cell.reminderCalorie?.sizeToFit()
+        total = Calorie.food - Calorie.exercise
         reminder.title = "오늘의 잔여 칼로리는 \(total)Kcal입니다!"
         return cell
     }
